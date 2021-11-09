@@ -1,0 +1,26 @@
+//  Modify this class so it uses the HDMIPlug's 
+// digitalDisplay() implementation. Note that you 
+// still must use a VidePlug (i.e., don't just replace
+// plug with an HDMIPlug object.
+
+public class VideoSocket {
+
+	public main(){
+		// plug MUST HAS TO be of type VideoPlug
+		VideoPlug plug = new VGAPlug();
+		
+		// can't be an HDMIPlug, needs to have display
+		// and fit into HDMI socket.
+		VideoPlug plug 2 = new digitalDisplay();
+
+
+		// call plug.display() 
+		new digitalDisplay = plug.display(1024, 768);
+
+		/** CHANGE: use plug in a method that only takes objects **/
+		print (width,height)
+		// of type VideoPlug (i.e., can't take HDMIPlugs)
+		// This line HAS TO be run on the plug
+		someOtherClass.plugDiagnostic(plug);
+	}
+}	

@@ -1,0 +1,41 @@
+public class Driver {
+	
+	public main(){
+
+	// create a button
+	/** CHANGE: here I instantiate the button as an object. **/
+	button = New button();
+
+	// create a red light
+	/** CHANGE: here I instantiate the red light as an object. **/
+		Light one = red light();
+		
+	// create a green light
+	/** CHANGE: here I instantiate the green light as an object. **/
+		Light two = green light();
+		
+	// create a blue light
+	/** CHANGE: here I instantiate the blue light as an object. **/
+		Light three = blue light
+		
+		
+	// have the blue light and the red light listen for the button 
+	/** CHANGE: Added function call addSubscriber which is an attribute of 
+	the button object. **/
+	new button.addSubscriber(red light);
+    new button.addSubscriber(green light);
+	new button.addSubscriber(blue light);
+
+	
+	/** CHANGE: Here I am notifying light (the observers); added 
+	notifySubscribers which is an attribute of the button object **/
+	New button.notifySubscribers();
+	
+
+	// press the button. Blue and red light should call turnOn in response
+	// NOTE: your Button class should be generic - do not hard-code these 
+	// lights into the Button class.
+
+	}
+}
+
